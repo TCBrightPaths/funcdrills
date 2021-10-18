@@ -67,8 +67,16 @@ console.log(sum);
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
-
+function nameCheck(name){
+  if(name === "Steven") {
+    console.log("What is up Steven?");
+  } else if (name === "Bryan") {
+    console.log("Hey Bryan!");
+  } else {
+    console.log(`Cool name, ${name}.`);
+  }
+}
+let nameGreeting = nameCheck("Tamara");
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
