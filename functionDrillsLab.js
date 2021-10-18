@@ -207,21 +207,38 @@ myFunction(sampleString);
   return 'must provide a valid email address'
 */
 
+function emailCheck(email) {
+  email.toString();
+  email.trim();
+  if(email.includes("@")) {
+    console.log("email verified");
+  } else {
+    console.log("must provide a valid email address");
+  }
+}
+emailCheck("   tcrta12345@gmail.com");
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
-
+function miles(gold) {
+    return (gold/3);
+}
+let totalFrogs = miles(2);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
   You might have noticed a slight bug in problem 12. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in problem 12 (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+function miles1(gold) {
+  return Math.round(gold/3);
+}
+let totalFrogs2 = miles1(8);
+console.log(totalFrogs2);
 
 
 ////////////////// PROBLEM 15 ////////////////////
