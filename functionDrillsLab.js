@@ -247,8 +247,15 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
-//CODE HERE
-
+function sortOrder(arr1) {
+  for(i = 0; i < arr1.length; i++) {
+    if(arr1[i] > arr1[i+1]) {
+      return (false);
+    } 
+  }
+}
+let arrayIsAscending = sortOrder(sampleArray);
+console.log(arrayIsAscending);
 
 ////////////////// PROBLEM 16 ////////////////////
 
