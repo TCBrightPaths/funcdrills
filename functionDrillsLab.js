@@ -148,8 +148,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
-
+function bigOrSmall(arr) {
+  let answers = [];
+  for (i = 0; i < arr.length; i++) {
+    if(arr[i] > 100) {
+      answers.push('big');
+    } else if(arr[i] <= 100) {
+      answers.push('small');
+    }
+  }
+  let arrayEvaluator = answers;
+  console.log(arrayEvaluator);
+}
+bigOrSmall(bigOrSmallArray);
 
 ////////////////// PROBLEM 10 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -159,8 +170,17 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
-
+function theEliminator(contestants, loser) {
+  for(i = 0; i < contestants.length; i++) {
+    if(contestants[i] === loser) {
+      contestants.splice(i, 1);
+      return (contestants);
+    
+    }
+  }
+}
+theEliminator(contestants, loser);
+console.log(contestants);
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -169,7 +189,11 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
+function myFunction(str) {
+  let result = str.toUpperCase();
+  console.log(result);
+}
+myFunction(sampleString);
 
 
 ////////////////// PROBLEM 12 ////////////////////
