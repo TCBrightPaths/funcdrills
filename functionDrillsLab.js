@@ -127,8 +127,15 @@ printAllNames(namesArr);
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
-
+function thatsOdd(num) {
+  if(num % 2 === 0) {
+    return ("That's not odd!");
+  } else {
+    return ("That is odd indeed!");
+  }
+}
+let oddChecker = thatsOdd(5);
+console.log(oddChecker);
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
