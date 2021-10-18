@@ -69,14 +69,15 @@ console.log(sum);
 
 function nameCheck(name){
   if(name === "Steven") {
-    console.log("What is up Steven?");
+    return ("What is up Steven?");
   } else if (name === "Bryan") {
-    console.log("Hey Bryan!");
+    return ("Hey Bryan!");
   } else {
-    console.log(`Cool name, ${name}.`);
+    return (`Cool name, ${name}.`);
   }
 }
 let nameGreeting = nameCheck("Tamara");
+console.log(nameGreeting);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -88,8 +89,19 @@ let nameGreeting = nameCheck("Tamara");
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
-
+function faveColorFinder(color) {
+  if (color === "red") {
+    return ("red is a great color");
+  } else if (color === "green") {
+    return ("green is a losid favorite color");
+  } else if (color === "black") {
+    return ("so trendy");
+  } else {
+    return ("you need to evaluate your favorite color choice");
+  }
+}
+let colorRating = faveColorFinder("blue");
+console.log(colorRating);
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
