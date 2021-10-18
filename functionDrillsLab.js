@@ -16,7 +16,11 @@ function helloWorld() {
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(name) {
+  console.log(name);
+}
+printName("Tamara");
+
 
 
 ////////////////// PROBLEM 3 ////////////////////
