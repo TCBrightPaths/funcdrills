@@ -34,7 +34,10 @@ printName("Tamara");
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name) {
+  console.log(`Hello, ${name}`);
+}
+greeting("jake");
 
 
 ////////////////// PROBLEM 4 ////////////////////
